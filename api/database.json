@@ -1,0 +1,95 @@
+{
+  "plumbers": [
+    {
+      "id": 1,
+      "name": "Mario Mario"
+    },
+    {
+      "id": 2,
+      "name": "Luigi Mario"
+    },
+    {
+      "id": 3,
+      "name": "Wario Wario"
+    },
+    {
+      "id": 4,
+      "name": "WaLuig Wario"
+    }
+  ],
+  "completions": [
+    {
+      "id": 1,
+      "serviceRequestId": 4,
+      "plumberId": 2,
+      "date_created": "2022-07-22"
+    },
+    {
+      "serviceRequestId": 3,
+      "plumberId": 2,
+      "date_completed": 1658492779794,
+      "id": 3
+    },
+    {
+      "serviceRequestId": 4,
+      "plumberId": 3,
+      "date_completed": 1658493034454,
+      "id": 4
+    },
+    {
+      "serviceRequestId": 7,
+      "plumberId": 3,
+      "date_completed": 1658514840760,
+      "id": 5
+    },
+    {
+      "serviceRequestId": 7,
+      "plumberId": 2,
+      "date_completed": 1658514846348,
+      "id": 6
+    },
+    {
+      "serviceRequestId": 7,
+      "plumberId": 1,
+      "date_completed": 1658514949666,
+      "id": 7
+    }
+  ],
+  "serviceRequests": [
+    {
+      "description": "Leaky tub faucet",
+      "address": "My house",
+      "budget": "1000",
+      "neededBy": "2022-07-30",
+      "id": 2
+    },
+    {
+      "description": "Lazy Susan Repair",
+      "address": "100 Main Street",
+      "budget": "89.42",
+      "neededBy": "2022-08-06",
+      "id": 3
+    },
+    {
+      "description": "Squeaky cabinets",
+      "address": "98 Steven Avenue",
+      "budget": "78",
+      "neededBy": "2022-08-05",
+      "id": 4
+    },
+    {
+      "description": "What a fun error",
+      "address": "I wish you'd stop",
+      "budget": 98123,
+      "neededBy": "2022-08-02",
+      "id": 5
+    },
+    {
+      "description": "will you work now",
+      "address": "maybe",
+      "budget": 9823,
+      "neededBy": "2022-08-04",
+      "id": 7
+    }
+  ]
+}
