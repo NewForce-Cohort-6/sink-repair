@@ -6,10 +6,10 @@ const API = "http://localhost:8088";
 
 export const fetchRequests = () => {
   return fetch(`${API}/serviceRequests`)
-    .then((response) => response.json())
-    .then((serviceRequests) => {
+    .then((dirtyServiceRequests) => dirtyServiceRequests.json())
+    .then((cleanServiceRequests) => {
       // Store the external state in application state
-      applicationState.serviceRequests = serviceRequests;
+      applicationState.serviceRequests = cleanServiceRequests;
     });
 };
 
@@ -44,10 +44,10 @@ export const deleteRequest = (id) => {
 
 export const fetchPlumbers = () => {
     return fetch(`${API}/plumbers`)
-        .then(response => response.json())
+        .then(dirtyPlumbers => dirtyPlumbers.json())
         .then(
-            (data) => {
-                applicationState.plumbers = data
+            (cleanPlumbers) => {
+                applicationState.plumbers = cleanPlumbers
             }
         )
 }
@@ -58,10 +58,10 @@ export const getPlumbers = () => {
  
   export const fetchCompletions = () => {
 	return fetch(`${API}/completions`)
-	  .then((response) => response.json())
-	  .then((completion) => {
+	  .then((dirtyCompletions) => dirtyCompletions.json())
+	  .then((cleanCompletion) => {
 		// Store the external state in application state
-		applicationState.completions = completion;
+		applicationState.completions = cleanCompletion;
 	  });
   };
 
